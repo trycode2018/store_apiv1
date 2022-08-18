@@ -1,64 +1,112 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+Criei uma API de teste do funcionamento das lojas de pequeno porte, utilizando Laravel e Blade (como Tamplate Enginne)
+Exemplos de alguns End-points a seguir :
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Buscar todas a lojas no banco :
+- # 127.0.0.1:8000/api/stores
+Resultado :
+"current_page": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "tempore repellendus rerum",
+            "description": "Cupiditate deleniti adipisci ut nostrum nam autem.",
+            "created_at": "2022-08-09T01:45:58.000000Z",
+            "updated_at": "2022-08-09T01:45:58.000000Z"
+        },
+        {
+            "id": 2,
+            "name": "corporis ad omnis",
+            "description": "Fugit excepturi nam voluptas repellat saepe.",
+            "created_at": "2022-08-09T01:46:25.000000Z",
+            "updated_at": "2022-08-09T01:46:25.000000Z"
+        },
+        {
+            "id": 3,
+            "name": "deserunt fugit incidunt",
+            "description": "Et sed et omnis temporibus.",
+            "created_at": "2022-08-09T01:47:06.000000Z",
+            "updated_at": "2022-08-09T01:47:06.000000Z"
+        },
+        {
+            "id": 4,
+            "name": "quis architecto ut",
+            "description": "Ullam accusamus quo eaque sint repellendus voluptas ut excepturi.",
+            "created_at": "2022-08-09T01:52:07.000000Z",
+            "updated_at": "2022-08-09T01:52:07.000000Z"
+        },
+        {
+            "id": 5,
+            "name": "est quaerat quas",
+            "description": "Est illo vitae doloribus sit.",
+            "created_at": "2022-08-09T01:52:07.000000Z",
+            "updated_at": "2022-08-09T01:52:07.000000Z"
+        },
+        {
+            "id": 6,
+            "name": "ipsam quia odit",
+            "description": "Expedita autem rerum dolor voluptatem molestiae.",
+            "created_at": "2022-08-09T01:52:07.000000Z",
+            "updated_at": "2022-08-09T01:52:07.000000Z"
+        },
+        {
+            "id": 7,
+            "name": "pariatur animi est",
+            "description": "Ab illo dolorum hic doloremque.",
+            "created_at": "2022-08-09T01:52:07.000000Z",
+            "updated_at": "2022-08-09T01:52:07.000000Z"
+        },
+        {
+            "id": 8,
+            "name": "quasi autem ut",
+            "description": "Doloremque natus adipisci et et maxime.",
+            "created_at": "2022-08-09T01:52:07.000000Z",
+            "updated_at": "2022-08-09T01:52:07.000000Z"
+        },
+        {
+            "id": 9,
+            "name": "voluptatem aliquam deserunt",
+            "description": "Recusandae voluptatem delectus quam vitae facilis similique et.",
+            "created_at": "2022-08-09T01:52:07.000000Z",
+            "updated_at": "2022-08-09T01:52:07.000000Z"
+        },
+        {
+            "id": 10,
+            "name": "ut laboriosam minus",
+            "description": "Qui neque et hic quia.",
+            "created_at": "2022-08-09T01:52:07.000000Z",
+            "updated_at": "2022-08-09T01:52:07.000000Z"
+        }
+    ],
+    "first_page_url": "http://127.0.0.1:8000/api/stores?page=1",
+    "from": 1,
+    "last_page": 2,
+    "last_page_url": "http://127.0.0.1:8000/api/stores?page=2",
+    "links": [
+        {
+            "url": null,
+            "label": "&laquo; Previous",
+            "active": false
+        },
+        {
+            "url": "http://127.0.0.1:8000/api/stores?page=1",
+            "label": "1",
+            "active": true
+        },
+        {
+            "url": "http://127.0.0.1:8000/api/stores?page=2",
+            "label": "2",
+            "active": false
+        },
+        {
+            "url": "http://127.0.0.1:8000/api/stores?page=2",
+            "label": "Next &raquo;",
+            "active": false
+        }
+    ],
+    "next_page_url": "http://127.0.0.1:8000/api/stores?page=2",
+    "path": "http://127.0.0.1:8000/api/stores",
+    "per_page": 10,
+    "prev_page_url": null,
+    "to": 10,
+    "total": 14
+}
